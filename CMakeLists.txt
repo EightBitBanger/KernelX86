@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
+
 project(tinyos C ASM_NASM)
 
 set(KERNEL_SECTORS 32)
