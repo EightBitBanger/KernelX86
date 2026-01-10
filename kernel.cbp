@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="kernel" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="kernel/;boot/;drivers/" />
+		<Build>
+			<Target title="Build">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<ExtraCommands>
+					<Add before="build.bat" />
+				</ExtraCommands>
+			</Target>
+			<Target title="Run">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<Option host_application="run.bat" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="boot/boot.asm">
+			<Option virtualFolder="boot/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="boot/stage2.asm">
+			<Option virtualFolder="boot/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/commands.h">
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/console.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/console.h">
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/idt.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/idt.h">
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/io.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="kernel/" />
+		</Unit>
+		<Unit filename="kernel/io.h">
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/isr.asm">
+			<Option link="0" />
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/kernel.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/keyboard.c">
+			<Option compilerVar="CC" />
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/keyboard.h">
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/kstring.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/kstring.h">
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/print.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="kernel/print.h">
+			<Option virtualFolder="kernel/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
