@@ -1,6 +1,7 @@
 #include "idt.h"
 #include "print.h"
 
+
 typedef struct __attribute__((packed)) {
     uint16_t offset_low;
     uint16_t selector;
