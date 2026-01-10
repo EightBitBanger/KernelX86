@@ -1,3 +1,0 @@
-C:/Users/Sniperchicken/Desktop/kernel/build/CMakeFiles/image.dir
-C:/Users/Sniperchicken/Desktop/kernel/build/CMakeFiles/edit_cache.dir
-C:/Users/Sniperchicken/Desktop/kernel/build/CMakeFiles/rebuild_cache.dir
